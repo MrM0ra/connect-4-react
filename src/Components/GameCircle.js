@@ -4,10 +4,17 @@ const circleClick = (In_Value) => {
 	alert("Clicked "+In_Value)
 }
 
-const GameCircle = ({id, children}) => {
+const GameCircle = ({id, children, bgColor}) => {
+
+    const gameCircle = {
+        borderRadius: '50%',
+        backgroundColor: bgColor,
+        display: "grid",
+        placeItems: "center"
+    }
 
 	return (
-		<div onClick= {() => circleClick(id)}>
+		<div style={gameCircle} onClick= {() => circleClick(id)}>
 			{children}
 		</div>
 	)
