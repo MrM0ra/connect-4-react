@@ -1,5 +1,6 @@
 import React from "react";
 import GameCircle from "./GameCircle";
+import "../Game.css";
 
 const GameBoard = () => {
 
@@ -19,41 +20,41 @@ const GameBoard = () => {
 
 	return (
 		<div style={centereedFlexbox}>
-			<div style={boardGrid}>
-				<GameCircle id={1} bgColor="Red">
+			<div className="gameBoard">
+				<GameCircle id={1}>
 					<div>Red</div>
 				</GameCircle>
-				<GameCircle id={2} bgColor="Blue">
+				<GameCircle id={2}>
 					<div>Blue</div>
 				</GameCircle>
-				<GameCircle id={3} bgColor="Red">
+				<GameCircle id={3}>
 					<div>Red</div>
 				</GameCircle>
-				<GameCircle id={4} bgColor="Blue">
+				<GameCircle id={4}>
 					<div>Blue</div>
 				</GameCircle>
-				<GameCircle id={5} bgColor="Red">
+				<GameCircle id={5}>
 					<div>Red</div>
 				</GameCircle>
-				<GameCircle id={6} bgColor="Blue">
+				<GameCircle id={6}>
 					<div>Blue</div>
 				</GameCircle>
-				<GameCircle id={7} bgColor="Red">
+				<GameCircle id={7}>
 					<div>Red</div>
 				</GameCircle>
-				<GameCircle id={8} bgColor="Blue">
+				<GameCircle id={8}>
 					<div>Blue</div>
 				</GameCircle>
-				<GameCircle id={9} bgColor="Red">
+				<GameCircle id={9}>
 					<div>Red</div>
 				</GameCircle>
-				<GameCircle id={10} bgColor="Blue">
+				<GameCircle id={10}>
 					<div>Blue</div>
 				</GameCircle>
-				<GameCircle id={11} bgColor="Red">
+				<GameCircle id={11}>
 					<div>Red</div>
 				</GameCircle>
-				<GameCircle id={10} bgColor="Blue">
+				<GameCircle id={10}>
 					<div>Blue</div>
 				</GameCircle>
 			</div>
