@@ -2,20 +2,25 @@
     display: grid;
     grid-template-columns: repeat(4,1.5fr);
     row-gap: 5px;
-    height: 500px; 
-    width: 700px;
+    height: 700px; 
+    width: 800px;
 }
 
 .gameCircle{
     border-radius: 50%;
     display: grid;
     place-items: center;
+    border: 5px solid;
 }
 
-.odd-circle {
+.player-1 {
     background-color: red;
 }
 
-.even-circle {
+.player-2 {
     background-color: blue;
+}
+
+.player-0 {
+    background-color: white;
 }
