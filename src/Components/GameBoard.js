@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import GameCircle from "./GameCircle";
 import "../Game.css";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 const NO_PLAYER = 0
 const PLAYER_1 = 1
@@ -46,11 +48,15 @@ const GameBoard = () => {
 	}
 
 	return (
-		<div style={centereedFlexbox}>
-			<div className="gameBoard">
-				{initBoard()}
+		<>
+			<Header player={currentPlayer}/>
+			<div style={centereedFlexbox}>
+				<div className="gameBoard">
+					{initBoard()}
+				</div>
 			</div>
-		</div>
+			<Footer/>
+		</>
 	)
 
 }
