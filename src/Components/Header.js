@@ -1,5 +1,5 @@
 import React from 'react'
-import { GAME_STATE_PLAYING, GAME_STATE_WIN } from '../Constants'
+import { GAME_STATE_DRAW, GAME_STATE_PLAYING, GAME_STATE_WIN } from '../Constants'
 
 export const Header = ({currentPlayer, gameState, winPlayer}) => {
 	
@@ -9,6 +9,9 @@ export const Header = ({currentPlayer, gameState, winPlayer}) => {
                 return `Player ${currentPlayer} Turn`
             case GAME_STATE_WIN:
                 return `Player ${winPlayer} Wins!`
+			case GAME_STATE_DRAW:
+				return `Game is a Draw`
+			default:
         }
     }
     

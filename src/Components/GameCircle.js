@@ -3,8 +3,6 @@ import "../Game.css";
 
 const GameCircle = ({id, children, className, onCircleClicked}) => {
 
-
-
 	return (
 		<div 
 			className = {`gameCircle ${className}`} 
