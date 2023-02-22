@@ -1,3 +1,7 @@
+# Site deploy link
+
+This project was deployed on netlify on https://jocular-gumdrop-497a26.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
